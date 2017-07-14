@@ -1,0 +1,72 @@
+#-------------------------------
+# General Site Settings
+
+title: Lina Reid
+description: Powered by Jekyll and GitHub Pages
+email: lina.reid@telus.net
+
+menu:
+- {name: 'Home', url: 'index.html'}
+- {name: 'Gallery', url: 'gallery.html'}
+- {name: 'Resume', url: 'resume.html'}
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+  description: 'Personal portfolio powered by Jekyll and GitHub Pages '
+  rel-author: 'https://plus.google.com/u/0/#'
+  rel-publisher: 'https://plus.google.com/u/0/#'
+
+#-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+#google-analytics-ua: UA-XXXXXX-X
+
+#-------------------------------
+# About Section
+
+about: >
+  # Lina Reid
+
+  <p>Hi! I'm Lina-- others may know me informally as Midna. I'm a concept artist whose passion is character and creature design! These past years have been spent honing my craft by doing daily practices, taking freelance commission work from clients both online and in person, and spending countless hours building whole worlds for my characters and creatures to reside in.</p>
+  <p>Aside from being a dedicated artist, I am also a huge nerd. I love cartoons, comics, writing, world building, video games, furry, movies (especially horror!), sci-fi, and probably a ton of things I'm forgetting. Being passionate about a lot of things has created a deep pool for me to take inspiration from. I've even been fortunate enough to bring some of my wonderful creations (and other people's) to life in the form of costumes, and hopefully, eventually, in the form of my own video games.</p>
+
+contact: >
+  # Contact
+
+  You may contact me [through my email](mailto:lina.reid@telus.net) or [tweet at me](https://twitter.com/Milksage) if you have any questions.
+
+#-------------------------------
+# Home Content
+homeContent: >
+  <p>Hi! I'm Lina-- others may know me informally as Midna. I'm a concept artist whose passion is character and creature design! These past years have been spent honing my craft by doing daily practices, taking freelance commission work from clients both online and in person, and spending countless hours building whole worlds for my characters and creatures to reside in.</p>
+  <p>Aside from being a dedicated artist, I am also a huge nerd. I love cartoons, comics, writing, world building, video games, furry, movies (especially horror!), sci-fi, and probably a ton of things I'm forgetting. Being passionate about a lot of things has created a deep pool for me to take inspiration from. I've even been fortunate enough to bring some of my wonderful creations (and other people's) to life in the form of costumes, and hopefully, eventually, in the form of my own video games.</p><br>
+  <hr>
+  <h3>Featured Art</h3>
+
+#-------------------------------
+# Work Section
+projects:
+- {name: 'Project One', folder: 'elliot'}
+- {name: 'Project Two', folder: 'bates'}
+- {name: 'Project Three', folder: 'env2'}
+- {name: 'Project Four', folder: 'env1'}
+- {name: 'Project Five', folder: 'bunko'}
+- {name: 'Project six', folder: 'bates2'}
+
+#-------------------------------
+# Contact Section
+
+social:
+- {icon: 'twitter', link: 'https://twitter.com/Milksage'}
+- {icon: 'youtube', link: 'https://www.youtube.com/channel/UCZ-x9fZMzniKj0Ibu72OhcQ'}
+
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'

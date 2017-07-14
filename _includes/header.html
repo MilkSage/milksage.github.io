@@ -1,0 +1,20 @@
+<header>
+    <nav class="logo" style="background-image: url({{ site.github.url }}/assets/img/banner.jpg)">
+    </nav>
+    <div class="navbar">
+      <div class="part0">
+        <img src="{{ site.github.url }}/assets/img/profile.png" class="profilePic">
+      </div>
+      <div class="part1">
+        <a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a><br/>
+        {% for item in site.data.settings.social %}
+          <a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></a>
+        {% endfor %}
+      </div>
+      <div class="part2">
+        {% for item in site.data.settings.menu %}
+          <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+</header>
