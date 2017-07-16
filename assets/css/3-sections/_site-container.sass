@@ -1,6 +1,11 @@
 body
   background: white
   font-family: 'Roboto', sans-serif
-.site-container
-  max-width: 70vw
-  margin: auto
+@media screen and (min-width: 750px)
+  .site-container
+    max-width: 70vw
+    margin: auto
+@media screen and (max-width: 750px)
+  .site-container
+    margin: auto
+    max-width: 100%
