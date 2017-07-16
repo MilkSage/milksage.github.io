@@ -6,6 +6,8 @@ header
   @media screen and (max-width: 750px)
     max-width: 750px
     box-sizing: border-box
+    .menu
+      list-style-type: none
     .navbar
       top: -115px
       position: relative
@@ -21,6 +23,7 @@ header
       display: table-cell
       white-space: nowrap
       padding: 25px
+      font-size: 25px
     .part2
       text-align: right
       width: 45vw
@@ -38,6 +41,12 @@ header
     color: rgba(0,0,0,1)
     font-size: 25px
     height: 60vh
+    .menu
+      display: inline
+      list-style-type: none
+      .menu_item
+        display: table-cell
+        list-style-type: none
     &:hover
       color: $accent-color
       box-sizing: border-box
@@ -80,3 +89,179 @@ header
       background-repeat: no-repeat
       height: 45vh
       opacity: .90
+
+// @media (max-width: 767px)
+//   #nav-content > ul > li > p > a > img:hover,
+//   #nav-content > ul > li > p > a > img:focus
+//     text-decoration: none
+//     color: rgba(255, 255, 255, 1)
+//     background-color: rgba(224, 40, 40, 0)
+//     border-bottom: 0px solid #000
+//   .menu_item
+//     font-size: 25px
+//     margin: 15px
+//   .button
+//     padding-top: 15px
+//     padding-bottom: 15px
+//     padding-right: 45px
+//     padding-left: 45px
+//     word-spacing: 1px
+//     border-radius: 0px
+//   .logo
+//     padding-top: 0px
+//   .collapseColor
+//     background-color: rgba(40, 40, 40, 0.7)
+//     border-radius: 5px
+//   .collapsedNav
+//     background-color: rgba(40, 40, 40, 0)
+//     border-radius: 0px
+//     border-top: 0px transparent
+//     -webkit-box-shadow: inset 0 0px 0 rgba(255,255,255,0)
+//     box-shadow: inset 0 0px 0 rgba(255,255,255,0)
+//   #nav-content > ul > li > a
+//     padding-left: 0px
+//   #nav-content > ul > li > .primary
+//     padding-left: 15px
+//   #nav-content > ul > li > a > p:hover,
+//   #nav-content > ul > li > a > p:focus
+//     text-decoration: none
+//     color: #ff0
+// #nav-content > ul > li > a:hover
+//   text-decoration: none
+//   background: rgba(46,76,130, 0)
+// header .navbar-nav>li>a:focus
+//   text-decoration: none
+//   background: rgba(46,76,130, 0)
+// #nav-content > ul > li > .primary:link,
+// #nav-content > ul > li > .primary:visited,
+// #nav-content > ul > li > .primary:hover
+//   margin-top: 15px
+//   color: rgba(255,255,255,1)
+//   text-decoration: none
+//   background: rgba(46,76,130, 1)
+//   .untoggledLogo
+//     width: 150%
+// #imgbanner
+//   position: absolute
+//   width: 100%
+//   height: 100vh
+//   background-size: cover
+//   background-image: url('assets/img/banner.jpg')
+//   opacity: .40
+// #banner
+//   height: 100vh
+//   .logo
+//     padding-top: 20px
+//   #nav-content > ul > li > a > p:hover,
+//   #nav-content > ul > li > a > p:focus
+//     text-decoration: none
+//     color: rgba(255, 255, 255, 1)
+//     background-color: rgba(224, 40, 40, 0)
+//     border-bottom: 1px solid #ff0
+//     padding: 0px
+//     margin: 0px
+//   .primary
+//     -webkit-transition: all ease .5s
+//     -moz-transition: all ease .5s
+//     -o-transition: all ease .5s
+//     transition: all ease .5s
+//     background-color: rgb(66,96,150)
+//   .secondary:link, .secondary:visited
+//     color: rgba(255,255,255,1)
+//     -webkit-transition: all ease .5s
+//     -moz-transition: all ease .5s
+//     -o-transition: all ease .5s
+//     transition: all ease .5s
+//     background-color: rgb(127,111,90)
+//   .secondary:hover
+//     background: rgba(107,91,70, 1)
+//   .btn:hover
+//     color: rgb(106,136,190)
+//   .introButtons
+//     margin-top: 30px
+//   .bottonContainer
+//     padding-top: 10px
+//     padding-bottom: 15px
+//   #banner > div > div > div > div > a
+//     width: 240px
+//     font-size: 16pt
+//   #navbutton
+//     background-color: white
+//   .icon-bar
+//     background-color: black
+//   #top_color
+//     position: absolute
+//     left: 0
+//     top: 0
+//     right: 0
+//     bottom: 0
+//     z-index: -2
+//     background: #272725
+// header
+//   color: rgb(255,255,255)
+// .icon
+//   width: 32px
+//   height: 32px
+//   margin-top: 10px
+// .untoggleNav
+//   padding: 15px
+//   position: fixed
+//   background-color: hsla(187,25%,65%,0)
+//   color: white
+//   left: 0
+//   font-size: 13px
+//   right: 0
+//   margin: 0 auto
+//   z-index: 999
+//   -webkit-transition: all ease .8s
+//   -moz-transition: all ease .8s
+//   -o-transition: all ease .8s
+//   transition: all ease .8s
+// .toggleNav
+//   position: fixed
+//   background-color: hsla(187,0%,0%,0.9)
+//   padding: 12px
+//   color: white
+//   left: 0
+//   font-size: 13px
+//   right: 0
+//   margin: 0 auto
+//   z-index: 999
+//   -webkit-transition: all ease .8s
+//   -moz-transition: all ease .8s
+//   -o-transition: all ease .8s
+//   transition: all ease .8s
+// nav p
+//   font-size: 15px
+// nav a
+//   color: white
+// .menu_item :hover
+//   background-color: transparent
+//   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0)
+// nav li :hover
+//   background-color: transparent
+//   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0)
+// .center
+//   width: 100px
+//   height: 100px
+//   display: inline-block
+//   left: 0
+//   right: 0
+//   margin-left: 30px
+//   margin-right: 30px
+// .contact a:link
+//   font-size: 18px
+//   text-decoration: none
+// .contact a:visited
+//   text-decoration: none
+// .contact a:hover
+//   text-decoration: none
+// .vertical-center
+//   min-height: 100%
+//   min-height: 100vh
+//   display: flex
+//   align-items: center
+// .center_contact
+//   height: 10vh
+// .center
+//   height: 20vh

@@ -6,15 +6,58 @@
         <img src="{{ site.github.url }}/assets/img/profile.png" class="profilePic">
       </div>
       <div class="part1">
-        <a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a><br/>
-        {% for item in site.data.settings.social %}
-          <a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></a>
-        {% endfor %}
+        <a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a>
       </div>
       <div class="part2">
+       <ul class="menu" id="menu">
+         {% for item in site.data.settings.social %}
+           <li class="menu_item"><a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></a></li>
+         {% endfor %}
         {% for item in site.data.settings.menu %}
-          <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
+          <li class="menu_item"><a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a></li>
         {% endfor %}
+       </ul>
       </div>
     </div>
 </header>
+<!-- <header class="banner" role="banner">
+    <div id="banner">
+    <nav class="navbar-static-top untoggleNav " role="navigation" id="nav">
+      <div class="container-fluid">
+      <div class="navbar-header">
+            <button type="button" id="navbutton" class="navbar-toggle collapsed">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+      <a class="navbar-brand logo" href="#"><img src="{{ site.github.url }}/assets/img/profile.png" class="profilePic untoggledLogo"></a>
+      </div>
+        <div class="collapse navbar-collapse collapseColor" id="nav-content">
+          <ul class="nav navbar-nav navbar-right">
+            {% for item in site.data.settings.social %}
+              <li class="menu_item"><a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></a></li>
+            {% endfor %}
+            {% for item in site.data.settings.menu %}
+              <li class="menu_item"><a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+    </div>
+  </header> -->
+
+  <script type="text/javascript">
+      if ($(window).width() < 750) {
+        var menu = document.getElementById('menu').getElementsByTagName('li')
+        for(var row in menus){
+             if(typeof menus[row] == 'object' && menus[row].getElementsByTagName('ul').length > 0){
+                 menus[row].getElementsByTagName('ul')[0].className = 'selected';
+             }
+        }
+      }else{
+      }
+    });
+  </script>
