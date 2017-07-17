@@ -1,7 +1,7 @@
 <header>
 
         <nav class="logo" style="background-image: url({{ site.github.url }}/assets/img/banner.jpg)">
-          <div class="navbar">
+          <div class="navbar clearHeader" id="navigation">
             <div class="part1">
               <h4><a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a></h4>
             </div>
@@ -49,7 +49,6 @@
     </nav>
     </div>
   </header> -->
-
   <script type="text/javascript">
       if ($(window).width() < 750) {
         var menu = document.getElementById('menu').getElementsByTagName('li')
@@ -58,7 +57,15 @@
                  menus[row].getElementsByTagName('ul')[0].className = 'selected';
              }
         }
-      }else{
-      }
+    };
+    var header = $(".clearHeader");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 1) {
+            header.removeClass('clearHeader').addClass("darkHeader");
+        } else {
+            header.removeClass("darkHeader").addClass('clearHeader');
+        }
     });
   </script>
