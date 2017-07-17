@@ -36,7 +36,7 @@ header
       background-size: cover
       background-repeat: no-repeat
       height: 45vh
-      opacity: .90
+      opacity: .85
 
   @media screen and (min-width: 750px)
     // position: relative
@@ -53,23 +53,32 @@ header
       color: $accent-color
       box-sizing: border-box
     .navbar
-      top: -115px
-      position: relative
+      // top: -115px
+      // position: relative
       text-align: left
+      width: 100%
+      position: fixed
+      background-color: rgba(0,0,0,0.1)
+      border-radius: 5px
     .part0
       text-align: right
       width: 25vw
       padding-left: 20px
       display: table-cell
       white-space: nowrap
+      position: absolute
+      top: 330px
     .part1
-      width: 10vw
+      width: 20vw
       display: table-cell
       white-space: nowrap
-      padding: 25px
+      // padding: 25px
+      text-align: right
+      h4
+        margin: 0
     .part2
       text-align: right
-      width: 45vw
+      width: 75vw
       display: table-cell
       white-space: nowrap
       a
@@ -82,15 +91,15 @@ header
         -o-transition: all ease .5s
         transition: all ease .5s
         // box-shadow: -5px -5px -5px -5px rgba(0, 0, 0, 0.5)
-        -moz-box-shadow:    inset 0 0 5px rgba(0, 0, 0, 0.2)
-        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2)
-        box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.2)
+        // -moz-box-shadow:    inset 0 0 5px rgba(0, 0, 0, 0.2)
+        // -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2)
+        // box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.2)
     .logo
       width: 100%
       background-size: cover
       background-repeat: no-repeat
       height: 45vh
-      opacity: .90
+      opacity: .85
 
 // @media (max-width: 767px)
 //   #nav-content > ul > li > p > a > img:hover,
