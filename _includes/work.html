@@ -9,8 +9,13 @@
   </div> -->
 
   <div class="container">
+  <!-- <div class="profilePicture">
+    <img src="{{ site.github.url }}/assets/img/profile.png" class="profilePic">
+  </div> -->
+  <div class="homeContent">
     {{ site.data.settings.homeContent }}
-
+  </div>
+  {{ site.data.settings.featuredTitle }}
     <div class="block-media">
       <div class="carousel-images slider-nav">
           {% for project in site.data.settings.projects %}
