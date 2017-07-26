@@ -1,26 +1,31 @@
 <header>
-
-        <nav class="logo" style="background-image: url({{ site.github.url }}/assets/img/banner.jpg)">
-          <div class="navbar clearHeader" id="navigation">
-            <div class="part1">
-              <h4><a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a></h4>
-            </div>
-            <div class="part2">
-             <ul class="menu" id="menu">
-               {% for item in site.data.settings.social %}
-                 <li class="menu_item"><a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></a></li>
-               {% endfor %}
-              {% for item in site.data.settings.menu %}
-                <li class="menu_item"><a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a></li>
-              {% endfor %}
-             </ul>
-            </div>
-          </div>
-            <div class="profilePicture">
-              <img src="{{ site.github.url }}/assets/img/profile.png" class="profilePic">
-            </div>
-        </nav>
+  <nav class="logo" style="background-image: url({{ site.github.url }}/assets/img/banner.jpg)">
+    <div class="navbar clearHeader" id="navigation">
+      <div class="part1">
+        <h4><a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a></h4>
+      </div>
+      <div class="part2">
+       <ul class="menu" id="menu">
+         {% for item in site.data.settings.social %}
+           <li class="menu_item"><a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></a></li>
+         {% endfor %}
+        {% for item in site.data.settings.menu %}
+          <li class="menu_item"><a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a></li>
+        {% endfor %}
+       </ul>
+      </div>
+    </div>
+      <div class="profilePicture">
+        <img src="{{ site.github.url }}/assets/img/profile.png" class="profilePic">
+      </div>
+  </nav>
 </header>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
 <!-- <header class="banner" role="banner">
     <div id="banner">
     <nav class="navbar-static-top untoggleNav " role="navigation" id="nav">

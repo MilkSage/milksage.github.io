@@ -38,6 +38,21 @@ header
       height: 45vh
       opacity: .85
 
+    .profilePicture
+      top: 0px
+      position: absolute
+      width: 150px
+      height: 150px
+      .profilePic
+        border-radius: 100px
+        width: 50px
+        height: 50px
+        -webkit-transition: all ease .5s
+        -moz-transition: all ease .5s
+        -o-transition: all ease .5s
+        transition: all ease .5s
+
+
   @media screen and (min-width: 750px)
     // position: relative
     color: rgba(0,0,0,1)
@@ -76,7 +91,12 @@ header
       position: absolute
       width: 25vw
       padding-left: 20px
-      top: 35vh
+      height: 150px
+      bottom: 0px
+      -webkit-transition: all ease .5s
+      -moz-transition: all ease .5s
+      -o-transition: all ease .5s
+      transition: all ease .5s
     .part1
       width: 20vw
       display: table-cell
@@ -286,3 +306,13 @@ header
 //   height: 10vh
 // .center
 //   height: 20vh
+// .slicknav_menu
+//   display: none
+//
+// @media screen and (max-width: 40em)
+// /* #menu is the original menu */
+//   .js #menu
+//     display: none
+//
+//   .js .slicknav_menu
+//     display: block
