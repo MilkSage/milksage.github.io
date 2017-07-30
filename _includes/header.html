@@ -7,10 +7,10 @@
       <div class="part2hide part2" id="toggleMenu">
        <ul class="menu" id="menu">
          {% for item in site.data.settings.social %}
-           <li class="menu_item"><a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></a></li>
+           <a href="{{ item.link }}"><li class="menu_item"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></li></a>
          {% endfor %}
         {% for item in site.data.settings.menu %}
-          <li class="menu_item"><a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a></li>
+          <a href="{{ site.github.url }}/{{ item.url }}"><li class="menu_item">{{ item.name }}</li></a>
         {% endfor %}
        </ul>
       </div>
