@@ -4,7 +4,7 @@
       <div class="part1">
         <h4><a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a></h4>
       </div>
-      <div class="part2">
+      <div class="part2hide part2" id="toggleMenu">
        <ul class="menu" id="menu">
          {% for item in site.data.settings.social %}
            <li class="menu_item"><a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></a></li>
@@ -15,17 +15,38 @@
        </ul>
       </div>
     </div>
-      <div class="profilePicture">
+      <div class="profilePicture" onclick="showHideMobile()">
         <img src="{{ site.github.url }}/assets/img/profile.png" class="profilePic">
       </div>
   </nav>
 </header>
 
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#menu').slicknav();
-});
-</script>
+
+<!-- <div class="mobileMenu">
+  <ul>
+    <li><a href="#">Menu Option 1</a></li>
+    <li><a href="#">Menu Option 2</a></li>
+    <li><a href="#">Menu Option 3</a></li>
+    <li><a href="#">Menu Option 4</a></li>
+  </ul>
+</div>
+<div class="mobileBodyWrapper">
+  <div class="mobileDimmer"></div>
+  <header class="header">
+    <div class="menuIcon">
+      <a href="#menuExpand" onclick="showHideMobile()">Menu</a>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Menu Option 1</a></li>
+        <li><a href="#">Menu Option 2</a></li>
+        <li><a href="#">Menu Option 3</a></li>
+        <li><a href="#">Menu Option 4</a></li>
+      </ul>
+    </nav>
+  </header>
+</div> -->
+
 <!-- <header class="banner" role="banner">
     <div id="banner">
     <nav class="navbar-static-top untoggleNav " role="navigation" id="nav">
@@ -54,6 +75,7 @@ $(document).ready(function(){
     </nav>
     </div>
   </header> -->
+
   <script type="text/javascript">
       if ($(window).width() < 750) {
         var menu = document.getElementById('menu').getElementsByTagName('li')
@@ -72,5 +94,12 @@ $(document).ready(function(){
         } else {
             header.removeClass("darkHeader").addClass('clearHeader');
         }
+    });
+
+    function showHideMobile() {
+      $("#toggleMenu").toggleClass("part2hide");
+    }
+    $(document).ready(function(){
+      $('#menu').slicknav();
     });
   </script>
