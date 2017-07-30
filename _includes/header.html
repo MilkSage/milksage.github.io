@@ -1,5 +1,5 @@
 <header>
-  <nav class="logo" style="background-image: url({{ site.github.url }}/assets/img/banner.jpg)">
+  <nav class="logo" style="background-image: url({{ site.github.url }}/assets/img/banner.jpg);background-position: center 0">
     <div class="navbar clearHeader" id="navigation">
       <div class="part1">
         <h4><a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a></h4>
@@ -21,64 +21,9 @@
   </nav>
 </header>
 
-
-<!-- <div class="mobileMenu">
-  <ul>
-    <li><a href="#">Menu Option 1</a></li>
-    <li><a href="#">Menu Option 2</a></li>
-    <li><a href="#">Menu Option 3</a></li>
-    <li><a href="#">Menu Option 4</a></li>
-  </ul>
-</div>
-<div class="mobileBodyWrapper">
-  <div class="mobileDimmer"></div>
-  <header class="header">
-    <div class="menuIcon">
-      <a href="#menuExpand" onclick="showHideMobile()">Menu</a>
-    </div>
-    <nav class="menu">
-      <ul>
-        <li><a href="#">Menu Option 1</a></li>
-        <li><a href="#">Menu Option 2</a></li>
-        <li><a href="#">Menu Option 3</a></li>
-        <li><a href="#">Menu Option 4</a></li>
-      </ul>
-    </nav>
-  </header>
-</div> -->
-
-<!-- <header class="banner" role="banner">
-    <div id="banner">
-    <nav class="navbar-static-top untoggleNav " role="navigation" id="nav">
-      <div class="container-fluid">
-      <div class="navbar-header">
-            <button type="button" id="navbutton" class="navbar-toggle collapsed">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-      <a class="navbar-brand logo" href="#"><img src="{{ site.github.url }}/assets/img/profile.png" class="profilePic untoggledLogo"></a>
-      </div>
-        <div class="collapse navbar-collapse collapseColor" id="nav-content">
-          <ul class="nav navbar-nav navbar-right">
-            {% for item in site.data.settings.social %}
-              <li class="menu_item"><a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></a></li>
-            {% endfor %}
-            {% for item in site.data.settings.menu %}
-              <li class="menu_item"><a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-
-    </nav>
-    </div>
-  </header> -->
-
   <script type="text/javascript">
       if ($(window).width() < 750) {
-        var menu = document.getElementById('menu').getElementsByTagName('li')
+        var menus = document.getElementById('menu').getElementsByTagName('li')
         for(var row in menus){
              if(typeof menus[row] == 'object' && menus[row].getElementsByTagName('ul').length > 0){
                  menus[row].getElementsByTagName('ul')[0].className = 'selected';
@@ -99,7 +44,4 @@
     function showHideMobile() {
       $("#toggleMenu").toggleClass("part2hide");
     }
-    $(document).ready(function(){
-      $('#menu').slicknav();
-    });
   </script>

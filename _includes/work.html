@@ -1,21 +1,10 @@
-
 <section>
-  <!--<a class="jumper" href="#test">Testing</a><div id="test"></div>-->
-  <!-- <div class="thumb-container">
-    {% for project in site.data.settings.projects %}
-      <div class="thumb-unit" data-folder="{{ site.github.url }}/Home/{{ project.folder }}" style="background-image: url({{ site.github.url }}/assets/img/Home/{{ project.folder }}/thumb.png)">
-      </div>
-    {% endfor %}
-  </div> -->
-
   <div class="container">
-  <!-- <div class="profilePicture">
-    <img src="{{ site.github.url }}/assets/img/profile.png" class="profilePic">
-  </div> -->
   <div class="homeContent">
     {{ site.data.settings.homeContent }}
   </div>
   {{ site.data.settings.featuredTitle }}
+  <div class="block-media-container">
     <div class="block-media">
       <div class="carousel-images slider-nav">
           {% for project in site.data.settings.projects %}
@@ -84,7 +73,7 @@
         </div>
       </div>
     </div><!-- /.block-text -->
-
+  </div>
   </div><!-- /.container -->
 
 </section>
