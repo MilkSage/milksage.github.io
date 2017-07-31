@@ -21,7 +21,7 @@ header
       list-style-type: none
     .navbar
       position: relative
-      text-align: left
+      text-align: right
     .part1
       display: none
     .part2
@@ -31,16 +31,18 @@ header
       width: 30vh
       padding-top: 40px
       opacity: 1
+      position: fixed
       -webkit-transition: all ease .5s
       -moz-transition: all ease .5s
       -o-transition: all ease .5s
       transition: all ease .5s
+      right: 0
       ul
         padding: 0
       li
         background-color: rgba(0,0,0,1)
         padding: 10px
-        padding-left: 40px
+        padding-right: 40px
         -webkit-transition: all ease .5s
         -moz-transition: all ease .5s
         -o-transition: all ease .5s
@@ -66,7 +68,21 @@ header
       height: 45vh
       opacity: .85
       background-position: center 0
-
+    .bar1, .bar2, .bar3
+      width: 35px
+      height: 5px
+      background-color: black
+      margin: 6px 0
+      transition: 0.4s
+      border-radius: 100px
+    .change .bar1
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+      transform: rotate(-45deg) translate(-9px, 6px)
+    .change .bar2
+      opacity: 0
+    .change .bar3
+      -webkit-transform: rotate(45deg) translate(-8px, -8px)
+      transform: rotate(45deg) translate(-8px, -8px)
     .profilePicture
       top: 0px
       position: fixed
@@ -74,9 +90,16 @@ header
         border-radius: 100px
         width: 50px
         height: 50px
-
+        padding: 10px
+    .mobileNav
+      position: fixed
+      right: 0
+      padding: 10px
+      border-radius: 10px
 
   @media screen and (min-width: 750px)
+    .mobileNav
+      display: none
     // position: relative
     color: rgba(0,0,0,1)
     font-size: 25px

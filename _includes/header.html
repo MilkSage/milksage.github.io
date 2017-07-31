@@ -15,8 +15,15 @@
        </ul>
       </div>
     </div>
-      <div class="profilePicture" onclick="showHideMobile()">
+      <div class="mobileNav" onclick="showHideMobile(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <div class="profilePicture">
         <img src="{{ site.github.url }}/assets/img/profile.png" class="profilePic">
+        </div>
       </div>
   </nav>
 </header>
@@ -41,7 +48,8 @@
         }
     });
 
-    function showHideMobile() {
+    function showHideMobile(x) {
       $("#toggleMenu").toggleClass("part2hide");
+      x.classList.toggle("change");
     }
   </script>
