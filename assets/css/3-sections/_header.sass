@@ -28,17 +28,25 @@ header
       display: table-cell
       z-index: 999999999999
       padding: 0
-      width: 30vh
+      width: 100%
       padding-top: 40px
       opacity: 1
       position: fixed
+      right: 0
       -webkit-transition: all ease .5s
       -moz-transition: all ease .5s
       -o-transition: all ease .5s
       transition: all ease .5s
-      right: 0
       ul
         padding: 0
+        width: 35vh
+        right: 0
+        position: fixed
+        top: 45px
+        -webkit-transition: all ease .5s
+        -moz-transition: all ease .5s
+        -o-transition: all ease .5s
+        transition: all ease .5s
       li
         background-color: rgba(0,0,0,1)
         padding: 10px
@@ -55,12 +63,19 @@ header
         transition: all ease .5s
     .part2hide
       opacity: 0
+      padding-top: 0px
+      width: 0
       -webkit-transition: all ease .5s
       -moz-transition: all ease .5s
       -o-transition: all ease .5s
       transition: all ease .5s
-      li
-        display: none
+      ul
+        right: -300px
+        top: 45px
+        -webkit-transition: all ease .5s
+        -moz-transition: all ease .5s
+        -o-transition: all ease .5s
+        transition: all ease .5s
     .logo
       width: 100vw
       background-size: cover
@@ -85,7 +100,6 @@ header
       transform: rotate(45deg) translate(-8px, -8px)
     .profilePicture
       top: 0px
-      position: fixed
       .profilePic
         border-radius: 100px
         width: 50px
