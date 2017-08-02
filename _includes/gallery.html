@@ -1,6 +1,6 @@
 <section>
   <div class="container">
-  <div class="block-media-container">
+  <div class="block-media-container gallerycarousel">
     {{ site.data.settings.featuredTitle }}
     <div class="block-media">
       <div class="carousel-images slider-nav">
@@ -19,14 +19,14 @@
   </div>
   <div class="galleryContainer">
     <div class="buttonSection">
-      <div class="all filterbutton" id="all" onclick="showAll()">All</div>
-      <div class="filterbutton" onclick="showSketches()">Sketches</div>
-      <div class="filterbutton" onclick="showIllustrations()">Illustrations</div>
-      <div class="filterbutton" onclick="showCharacters()">Characters</div>
+      <div class="all filterbutton selected" id="all" onclick="showAll()">All</div>
+      <div class="showSketches filterbutton" onclick="showSketches()">Sketches</div>
+      <div class="showIllustrations filterbutton" onclick="showIllustrations()">Illustrations</div>
+      <div class="showCharacters filterbutton" onclick="showCharacters()">Characters</div>
     </div>
     {% for project in site.data.settings.projects %}
-    <a data-lightbox="image-1" id="gallery" class="{{ project.category }}" href="{{ site.github.url }}/assets/img/Home/{{ project.folder }}/thumb.png">
-      <div class="gallery" style="background-image: url({{ site.github.url }}/assets/img/Home/{{ project.folder }}/thumb.png)">
+    <a data-lightbox="{{ project.category }}" id="gallery" class="{{ project.category }}" href="{{ site.github.url }}/assets/img/Home/{{ project.folder }}/thumb.png">
+      <div class="gallery {{ project.category }}" style="background-image: url({{ site.github.url }}/assets/img/Home/{{ project.folder }}/thumb.png)">
       </div>
     </a>
     {% endfor %}
@@ -35,27 +35,39 @@
 </section>
 <script type="text/javascript">
   function showAll() {
-    $("#all").removeClass('filterOut');
-    $(".sketches").removeClass('filterOut');
+    $("#all").removeClass('filterOut').addClass('selected');
     $(".illustrations").removeClass('filterOut');
     $(".characters").removeClass('filterOut');
+    $(".sketches").removeClass('filterOut');
+    $(".showCharacters").removeClass('selected');
+    $(".showIllustrations").removeClass('selected');
+    $(".showSketches").removeClass('selected');
   }
   function showSketches() {
-    $("#all").removeClass('filterOut');
-    $(".sketches").removeClass('filterOut');
+    $(".sketches").removeClass('filterOut selected');
+    $("#all").removeClass('filterOut selected');
     $(".illustrations").addClass('filterOut');
     $(".characters").addClass('filterOut');
+    $(".showSketches").addClass('selected');
+    $(".showCharacters").removeClass('selected');
+    $(".showIllustrations").removeClass('selected');
   }
   function showIllustrations() {
-    $("#all").removeClass('filterOut');
-    $(".sketches").addClass('filterOut');
-    $(".illustrations").removeClass('filterOut');
+    $(".illustrations").removeClass('filterOut selected');
+    $("#all").removeClass('filterOut selected');
     $(".characters").addClass('filterOut');
+    $(".sketches").addClass('filterOut');
+    $(".showIllustrations").addClass('selected');
+    $(".showCharacters").removeClass('selected');
+    $(".showSketches").removeClass('selected');
   }
   function showCharacters() {
-    $("#all").removeClass('filterOut');
+    $(".characters").removeClass('filterOut selected');
+    $("#all").removeClass('filterOut selected');
     $(".sketches").addClass('filterOut');
     $(".illustrations").addClass('filterOut');
-    $(".characters").removeClass('filterOut');
+    $(".showCharacters").addClass('selected');
+    $(".showSketches").removeClass('selected');
+    $(".showIllustrations").removeClass('selected');
   }
 </script>

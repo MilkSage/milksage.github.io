@@ -1,3 +1,7 @@
+.block-media-container
+  z-index: 0
+  position: relative
+  padding: 30px
 .galary-block-text
   display: none
 .galleryContainer
@@ -32,10 +36,10 @@
   transition: all ease .5s
 .filterbutton:hover
   background-color: rgba(0,0,0,0.2)
-  -webkit-transition: all ease .5s
-  -moz-transition: all ease .5s
-  -o-transition: all ease .5s
-  transition: all ease .5s
+  -webkit-transition: all ease-in-out .5s
+  -moz-transition: all ease-in-out .5s
+  -o-transition: all ease-in-out .5s
+  transition: all ease-in-out .5s
 .selected
   background-color: rgba(0,0,0,0.3)
   -webkit-transition: all ease .5s
@@ -43,4 +47,18 @@
   -o-transition: all ease .5s
   transition: all ease .5s
 .filterOut
+  opacity: 0
+  z-index: -999999
+  -webkit-transition: all ease-in-out .5s
+  -moz-transition: all ease-in-out .5s
+  -o-transition: all ease-in-out .5s
+  transition: all ease-in-out .5s
+.filterOut::after
   display: none
+@media screen and (max-width: 900px)
+  .filterbutton
+    width: 18%
+    -webkit-transition: all ease .5s
+    -moz-transition: all ease .5s
+    -o-transition: all ease .5s
+    transition: all ease .5s
