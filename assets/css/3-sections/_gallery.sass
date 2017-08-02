@@ -46,15 +46,36 @@
   -moz-transition: all ease .5s
   -o-transition: all ease .5s
   transition: all ease .5s
+.unfiltered
+  animation : filterInAnimation 1s ease forwards
+@keyframes filterInAnimation
+  0%
+    opacity: rgba(0,0,0,0)
+    height : 0px
+    width : 0px
+  100%
+    opacity: rgba(0,0,0,1)
+    height : 250px
+    width : 250px
 .filterOut
-  opacity: 0
-  z-index: -999999
-  -webkit-transition: all ease-in-out .5s
-  -moz-transition: all ease-in-out .5s
-  -o-transition: all ease-in-out .5s
-  transition: all ease-in-out .5s
-.filterOut::after
-  display: none
+  animation : filterOutAnimation 2s ease forwards
+  overflow: hidden
+@keyframes filterOutAnimation
+  0%
+    opacity: rgba(0,0,0,1)
+    height : 250px
+    width : 250px
+  30%
+    opacity: rgba(0,0,0,0.5)
+    height : 100px
+    width : 100px
+  99%
+    opacity: rgba(0,0,0,0)
+    height : 0px
+    width : 0px
+  100%
+    position: absolute
+    bottom: -900px
 @media screen and (max-width: 900px)
   .filterbutton
     width: 18%

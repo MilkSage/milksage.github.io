@@ -36,36 +36,40 @@
 <script type="text/javascript">
   function showAll() {
     $("#all").removeClass('filterOut').addClass('selected');
-    $(".illustrations").removeClass('filterOut');
-    $(".characters").removeClass('filterOut');
-    $(".sketches").removeClass('filterOut');
+    $(".illustrations").removeClass('filterOut').addClass('unfiltered');
+    $(".characters").removeClass('filterOut').addClass('unfiltered');
+    $(".sketches").removeClass('filterOut').addClass('unfiltered');
+
     $(".showCharacters").removeClass('selected');
     $(".showIllustrations").removeClass('selected');
     $(".showSketches").removeClass('selected');
   }
   function showSketches() {
-    $(".sketches").removeClass('filterOut selected');
+    $(".sketches").removeClass('filterOut selected').addClass('unfiltered');
     $("#all").removeClass('filterOut selected');
-    $(".illustrations").addClass('filterOut');
-    $(".characters").addClass('filterOut');
+    $(".illustrations").addClass('filterOut').removeClass('unfiltered');
+    $(".characters").addClass('filterOut').removeClass('unfiltered');
+
     $(".showSketches").addClass('selected');
     $(".showCharacters").removeClass('selected');
     $(".showIllustrations").removeClass('selected');
   }
   function showIllustrations() {
-    $(".illustrations").removeClass('filterOut selected');
+    $(".illustrations").removeClass('filterOut selected').addClass('unfiltered');
     $("#all").removeClass('filterOut selected');
-    $(".characters").addClass('filterOut');
-    $(".sketches").addClass('filterOut');
+    $(".characters").addClass('filterOut').removeClass('unfiltered');
+    $(".sketches").addClass('filterOut').removeClass('unfiltered');
+
     $(".showIllustrations").addClass('selected');
     $(".showCharacters").removeClass('selected');
     $(".showSketches").removeClass('selected');
   }
   function showCharacters() {
-    $(".characters").removeClass('filterOut selected');
+    $(".characters").removeClass('filterOut selected').addClass('unfiltered');
     $("#all").removeClass('filterOut selected');
-    $(".sketches").addClass('filterOut');
-    $(".illustrations").addClass('filterOut');
+    $(".sketches").addClass('filterOut').removeClass('unfiltered');
+    $(".illustrations").addClass('filterOut').removeClass('unfiltered');
+
     $(".showCharacters").addClass('selected');
     $(".showSketches").removeClass('selected');
     $(".showIllustrations").removeClass('selected');
