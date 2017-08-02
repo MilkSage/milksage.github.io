@@ -52,19 +52,76 @@ homeContent: >
 
 #-------------------------------
 # Featured title
-featuredTitle: >
+portfolioTitle: >
   <hr>
+  <h3>Portfolio</h3>
+
+#-------------------------------
+# Gallery
+featuredTitle: >
   <h3>Featured Art</h3>
+  <hr>
+
+galleryTitle: >
+  <h3>Gallery</h3>
+  <hr>
 
 #-------------------------------
 # Work Section
 projects:
-- {name: 'Project One', folder: 'elliot'}
-- {name: 'Project Two', folder: 'bates'}
-- {name: 'Project Three', folder: 'env2'}
-- {name: 'Project Four', folder: 'env1'}
-- {name: 'Project Five', folder: 'bunko'}
-- {name: 'Project six', folder: 'bates2'}
+- {name: 'Elliot Reference Sheet (Full) 2017', category: 'characters', folder: 'elliot', description: 'An updated ref from the previously uploaded not too long ago. All the information is the same, and relative stuff, with newly added color swatch, expressions, and a render with detail.'}
+- {name: 'Bates Head', category: 'sketches', folder: 'bates', description: 'Quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'}
+- {name: 'Exterior - Giovanni&#39;s', category: 'characters', folder: 'env2', description: 'An exterior drawing of something kind of Tir and Stolerish. Gritty section of the city, back door kind of thing to some grody club or bar.'}
+- {name: 'Exterior - Ocean', category: 'illustrations', folder: 'env1', description: 'I wanted to fix this and make some more beach, as it looks a little awkward, but overall I think it looks decent. It kind of looks like LoZ&#58; Wind Waker style or something because the colors are so bright.'}
+- {name: 'Bunko', category: 'characters', folder: 'bunko', description: 'Something I did for school. Thought I would share it here too since It turned out decently.'}
+- {name: 'Bates Ref 2017', category: 'characters', folder: 'bates2', description: 'I started working on Bates in 2015, and haven&#39;t uploaded anything to do with him yet. It&#39;s been kept relatively secret until I knew what to do with him. Maybe I will share some more information on him soon, but basically he exists in a semi surrealist universe in a circus - amusement park style place.'}
+
+#-------------------------------
+# Resume Text
+objective: >
+  <h4>My objective:</h4>
+  To gain employment in an entry-level position within a company that will utilize my skills and abilities, and provide opportunities for growth in a dynamic and stable workplace.
+
+experiences: >
+  <h3>Work Experiences</h3>
+  <h4>Winners/Homesense&#58; Abbotsford, BC, Oct 2015 - Present</h4>
+    <li>Running the till, stocking shelves, offloading the stock truck, customer service</li>
+  <h4>Art Commissions&#58; Abbotsford, BC, 2010 – Present</h4>
+    <li>Completed two murals, and have created my own business in which clients can contact me and request character designs, drawings, sketches, etc</li>
+
+volunteer: >
+  <h3>Volunteer Experience</h3>
+  <h4>Abbotsford Arts Council&#58; Abbotsford, BC, 2013 – 2015</h4>
+    <li>Gallery Attendant</li>
+    <li>Running the cash till</li>
+    <li>Computerized record keeping</li>
+    <li>Greeting visitors</li>
+    <li>general office duties</li>
+  <h4>MSA Museum Society&#58; Abbotsford, BC, 2009 – Present</h4>
+    <li>Planning and execution of special events at Tretheway House Heritage Site including set-up, and tear down as well as general office duties</li>
+    <li>Creating graphic art for press releases and published works</li>
+
+skills: >
+  <h3>Skills and Abilities</h3>
+  <li>Well versed in Adobe Photoshop; I employ Photoshop regularly for all my artwork, which includes character design, illustration, portraits, commissions, photo manipulation, as well as to create business cards and posters.</li>
+  <li>I have advanced knowledge using Windows operating systems, and a base knowledge using Mac operating systems.</li>
+  <li>I have applied basic skills in HTML/CSS coding and web design.</li>
+  <li>Knowledgeable in multiple computer programs including Adobe Photoshop, Correl Painter, Audacity, Open Office, and Word.</li>
+  <li>A published artist who applies my skills in a variety of mediums successfully including drawing, watercolors, acrylics, and in the use of the Wacom Intuos tablet for digital painting and sketching.</li>
+  <li>I am a skilled writer and have produced works which exceeded 100,000 words.</li>
+
+education: >
+  <h3>Education</h3>
+  <h4>Vancouver Animation School&#58; 2014 – March 2017</h4>
+    <li>Concept Art Diploma</li>
+  <h4>Yale Secondary School&#58; 2009 – 2013</h4>
+    <li>Graduated Grade 12, consistently on Honor Roll, average 90%</li>
+
+awards: >
+  <h3>Awards and Achievements</h3>
+  <li>A 10% Scholarship at the Vancouver Animation School in 2014</li>
+  <li>Outstanding Achievement and four years of Honor Roll at Yale Secondary School</li>
+  <li>Arty Awards nominee for Outstanding Emerging Artist from Abbotsford Art Council in 2010</li>
 
 #-------------------------------
 # Contact Section
