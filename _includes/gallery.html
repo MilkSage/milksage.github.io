@@ -25,8 +25,8 @@
       <div class="showCharacters filterbutton" onclick="showCharacters()">Characters</div>
     </div>
     {% for project in site.data.settings.gallery %}
-    <a data-lightbox="{{ project.category }} all" id="gallery" class="{{ project.category }}" href="{{ site.github.url }}/assets/img/Gallery/{{ project.file }}/thumb.png">
-      <div class="gallery {{ project.category }}" style="background-image: url({{ site.github.url }}/assets/img/Gallery/{{ project.file }}/thumb.png)">
+    <a data-lightbox="{{ project.category }} all" id="gallery" class="{{ project.category }}" href="{{ site.github.url }}/assets/img/Gallery/{{ project.file }}">
+      <div class="gallery {{ project.category }}" style="background-image: url({{ site.github.url }}/assets/img/Gallery/{{ project.file }})">
       </div>
     </a>
     {% endfor %}
