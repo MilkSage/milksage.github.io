@@ -10,7 +10,7 @@
             <a href="{{ site.github.url }}/{{ item.url }}"><li class="menu_item">{{ item.name }}</li></a>
           {% endfor %}
          {% for item in site.data.settings.social %}
-           <a href="{{ item.link }}"><li class="menu_item"><i class="fa fa-{{ item.icon }}" aria-hidden="true" target="_blank"></i></li></a>
+           <a href="{{ item.link }}" target="_blank"><li class="menu_item"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></li></a>
          {% endfor %}
        </ul>
       </div>
