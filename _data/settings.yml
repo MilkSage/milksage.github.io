@@ -69,12 +69,12 @@ galleryTitle: >
 #-------------------------------
 # Work Section
 projects:
-- {name: 'Elliot Reference Sheet (Full) 2017', category: 'characters', folder: 'elliot', description: 'A reference sheet for Elliot Richards, the player character for a personal horror project that is underway. He's a fiesty, adventurous teenaged boy who will need to fight to survive. Reference features color swatches, expressions, and basic information for Elliot.'}
-- {name: 'Exterior - Giovanni&#39;s', category: 'illustrations', folder: 'env2', description: 'Gritty section of a city, back door to some grody bar/club called Giovanni's. My imagining was something mafia related, and therefore the building may be a little underground.'}
+- {name: 'Elliot Reference Sheet (Full) 2017', category: 'characters', folder: 'elliot', description: 'A reference sheet for Elliot Richards, the player character for a personal horror project that is underway. He&#39;s a fiesty, adventurous teenaged boy who will need to fight to survive. Reference features color swatches, expressions, and basic information for Elliot.'}
+- {name: 'Exterior - Giovanni&#39;s', category: 'illustrations', folder: 'env2', description: 'Gritty section of a city, back door to some grody bar/club called Giovanni&#39;s. My imagining was something mafia related, and therefore the building may be a little underground.'}
 - {name: 'Exterior - Ocean', category: 'illustrations', folder: 'env1', description: 'Something still in the works, inspired by Wind Waker, and Breath of the Wild-- both beautiful Legend of Zelda games.'}
 - {name: 'Bunko', category: 'characters', folder: 'bunko', description: 'Reference sheet for a personal character, Bunko. Bunko is a Japanese fox demon known as a "kitsune", which are often known to play tricks and be very mischievous. Bunko got his name from the English word "bunco", which is a type of confidence trick-- an attempt to defraud someone after first allowing them to gain their confidence. Bunko is known to steal the life orbs of other Kitsune after winning rigged games that he sets up for them.'}
 - {name: 'Bates Ref 2017', category: 'characters', folder: 'bates2', description: 'I started working on Bates in 2015, and figured it was time he got a full reference sheet. He is a cartoon character brought to life by scientists, who perhaps misunderstood the violent nature of cartoons upon doing so. What may be funny to a cartoon, and capable of a cartoon, may not translate well to real life...Bates is the main antagonist of a personal horror project I am currently working on; He is a apathetic, extremely intelligent monster who traps victims for his own playtime.'}
-- {name: 'Bates Head', category: 'sketches', folder: 'bates', description: 'Turn-around reference for Bates' head, as he has some odd shapes and atypical anatomy due to his being a cartoon brought to life.'}
+- {name: 'Bates Head', category: 'sketches', folder: 'bates', description: 'Turn-around reference for Bates&#39; head, as he has some odd shapes and atypical anatomy due to his being a cartoon brought to life.'}
 
 #-------------------------------
 # gallery
