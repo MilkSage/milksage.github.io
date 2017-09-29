@@ -79,45 +79,45 @@ projects:
 #-------------------------------
 # gallery
 gallery:
-- {file: 'dirty_looks_by_translucentrainbow-dbal0no.png', category: 'illustrations'}
-- {file: 'djinni_by_translucentrainbow-daxcbik.png', category: 'illustrations'}
+- {file: 'dirty_looks_by_translucentrainbow-dbal0no.png', category: 'characters'}
+- {file: 'djinni_by_translucentrainbow-daxcbik.png', category: 'characters'}
 - {file: 'homework_wing_glider_by_translucentrainbow-darrmzr.jpg', category: 'illustrations'}
 - {file: 'sama_art_trade_2_by_translucentrainbow-db8s5gp.png', category: 'illustrations'}
-- {file: 'macaroni_new_ref_by_translucentrainbow-da14ck6.png', category: 'illustrations'}
-- {file: 'schoolwork3_by_translucentrainbow-da6ulfl.jpg', category: 'illustrations'}
-- {file: 'my_name_is_tsuki_i_secretly_have_a_boyfriend_who_i_by_translucentrainbow-d949l6q.png', category: 'illustrations'}
+- {file: 'macaroni_new_ref_by_translucentrainbow-da14ck6.png', category: 'characters'}
+- {file: 'schoolwork3_by_translucentrainbow-da6ulfl.jpg', category: 'characters'}
+- {file: 'my_name_is_tsuki_i_secretly_have_a_boyfriend_who_i_by_translucentrainbow-d949l6q.png', category: 'characters'}
 - {file: 'nostro_by_translucentrainbow-dal9bmx.png', category: 'characters'}
-- {file: 'new house - 1.png', category: 'characters'}
-- {file: 'pootoe_copy_by_translucentrainbow-d6p4rlm.png', category: 'characters'}
-- {file: 'portfolio piece 1 - 1.png', category: 'characters'}
-- {file: 'portfolio piece 2 - 2.png', category: 'characters'}
+- {file: 'new house - 1.png', category: 'illustrations'}
+- {file: 'pootoe_copy_by_translucentrainbow-d6p4rlm.png', category: 'illustrations'}
+- {file: 'portfolio piece 1 - 1.png', category: 'illustrations'}
+- {file: 'portfolio piece 2 - 2.png', category: 'illustrations'}
 - {file: 'doki_new_ref_by_translucentrainbow-da0hg8m.png', category: 'characters'}
 - {file: 'save eli.png', category: 'sketches'}
 - {file: 'different_styles_2_by_translucentrainbow-d7944mf.png', category: 'sketches'}
-- {file: 'serth_reference_2016_by_translucentrainbow-dacdswr.png', category: 'sketches'}
-- {file: 'shandor_reference_by_translucentrainbow-d93ebzo.png', category: 'sketches'}
-- {file: 'steven sketches.png', category: 'characters'}
+- {file: 'serth_reference_2016_by_translucentrainbow-dacdswr.png', category: 'characters'}
+- {file: 'shandor_reference_by_translucentrainbow-d93ebzo.png', category: 'characters'}
+- {file: 'steven sketches.png', category: 'sketches'}
 - {file: 'roboo_copy_by_translucentrainbow-d767c81.png', category: 'sketches'}
-- {file: 'stoler new ref.png', category: 'sketches'}
+- {file: 'stoler new ref.png', category: 'characters'}
 - {file: '67jk56u4yg_by_translucentrainbow-d6lzhyx.png', category: 'sketches'}
-- {file: 'a_study_in_pink_by_translucentrainbow-d7kplop.png', category: 'sketches'}
-- {file: 'bates u r scury 3.png', category: 'sketches'}
-- {file: 'bike drawing.png', category: 'sketches'}
-- {file: 'chibi_steve_by_translucentrainbow-d9dlut4.png', category: 'sketches'}
-- {file: 'creature for school.png', category: 'sketches'}
-- {file: 'cynic reference sheet.png', category: 'sketches'}
+- {file: 'a_study_in_pink_by_translucentrainbow-d7kplop.png', category: 'illustrations'}
+- {file: 'bates u r scury 3.png', category: 'illustrations'}
+- {file: 'bike drawing.png', category: 'illustrations'}
+- {file: 'chibi_steve_by_translucentrainbow-d9dlut4.png', category: 'illustrations'}
+- {file: 'creature for school.png', category: 'characters'}
+- {file: 'cynic reference sheet.png', category: 'characters'}
 - {file: 'different_styles_2_by_translucentrainbow-d7944mf.png', category: 'sketches'}
-- {file: 'ed die 2.png', category: 'sketches'}
+- {file: 'ed die 2.png', category: 'illustrations'}
 - {file: 'eeeeeeeeeeeeeee.png', category: 'sketches'}
 - {file: 'el darling.png', category: 'sketches'}
 - {file: 'emo.png', category: 'sketches'}
-- {file: 'fabric universe.jpg', category: 'sketches'}
+- {file: 'fabric universe.jpg', category: 'illustrations'}
 - {file: 'fat orca dragon thing.png', category: 'sketches'}
-- {file: 'frankiestein_by_translucentrainbow-d83ilwv.png', category: 'sketches'}
-- {file: 'i hate drawing cats.png', category: 'sketches'}
-- {file: 'keka commission.png', category: 'sketches'}
-- {file: 'mac guro.png', category: 'sketches'}
-- {file: 'weimin_ref_by_translucentrainbow-d865amc.png', category: 'sketches'}
+- {file: 'frankiestein_by_translucentrainbow-d83ilwv.png', category: 'illustrations'}
+- {file: 'i hate drawing cats.png', category: 'characters'}
+- {file: 'keka commission.png', category: 'illustrations'}
+- {file: 'mac guro.png', category: 'illustrations'}
+- {file: 'weimin_ref_by_translucentrainbow-d865amc.png', category: 'characters'}
 
 #-------------------------------
 # Resume Text
